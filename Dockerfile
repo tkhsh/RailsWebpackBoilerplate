@@ -11,7 +11,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 COPY Gemfile $APP_ROOT
-# COPY Gemfile.lock $APP_ROOT
+COPY Gemfile.lock $APP_ROOT
 
 RUN \
   bundle config --global build.nokogiri --use-system-libraries && \
@@ -20,5 +20,5 @@ RUN \
 
 COPY . $APP_ROOT
 
-# EXPOSE 3000
-# CMD ["rails", "server", "-b", "0.0.0.0"]
+EXPOSE 3000
+CMD ["rails", "server", "-b", "0.0.0.0", "-p", "3000"]
