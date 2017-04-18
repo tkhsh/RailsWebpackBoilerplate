@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "webpack-dev-server --env development"
+    "start": "webpack-dev-server --env development --inline"
   },
   "keywords": [],
   "author": "tkhsh",
   "license": "MIT",
   "devDependencies": {
+    "html-webpack-plugin": "^2.28.0",
     "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.2"
+    "webpack-dev-server": "^2.4.2",
+    "webpack-merge": "^4.1.0"
   }
 }
