@@ -1,24 +1,24 @@
-# README
+# Rails Webpack Boilerplate
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Configure Rails app with
 
-Things you may want to cover:
+- Rails 5.x(< 5.1) api mode
+- MySQL
+- webpack 2.x
+- Docker containers(Rails, webpack, MySQL) composed
 
-* Ruby version
+## Configuration
 
-* System dependencies
+```
+git clone git@github.com:tkhsh/rails-webpack-boilerplate.git app_name
+cd app_name
+docker-compose build
+docker-compose run web rake db:setup
+docker-compose run client npm install
+```
 
-* Configuration
+## Run App
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+docker-compose up
+```
