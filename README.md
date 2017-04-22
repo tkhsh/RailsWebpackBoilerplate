@@ -1,6 +1,6 @@
 # Rails Webpack Boilerplate
 
-Configure Rails app with
+Configure Rails app for development with
 
 - Rails 5.x(< 5.1) api mode
 - MySQL
